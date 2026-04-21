@@ -232,8 +232,15 @@ print(std_capacity)
 
 # Plot
 plt.figure(figsize=(10, 6))
-mean_capacity.plot(kind="bar", yerr=std_capacity, capsize=5)
+
+mean_capacity.plot(
+    kind="bar",
+    yerr=std_capacity,
+    capsize=5
+)
+
 plt.title("Interannual variability")
 plt.ylabel("Capacity (GW)")
 plt.grid(axis="y", linestyle="--", alpha=0.7)
+
 plt.show()
